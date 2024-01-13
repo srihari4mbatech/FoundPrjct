@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
  
 # Load the pre-trained model and scaler
-loaded_model = load_model("stock_price_prediction_model.keras")
+loaded_model = load_model("stock_price_prediction_model.h5")
 loaded_scaler = joblib.load("scaler.joblib")
 scaler = MinMaxScaler()  # Assuming you have saved the scaler during training
 # nlp= load_spacy('en_core_web_sm')
